@@ -1,4 +1,4 @@
-# Install script for directory: E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1
+# Install script for directory: D:/Work/Adatszerkezet I/Projekt1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
