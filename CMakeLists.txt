@@ -3,4 +3,4 @@ project(Projekt1 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Projekt1 main.c)
+add_executable(Projekt1 main.c users.c users.h)

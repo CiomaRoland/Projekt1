@@ -1,10 +1,5 @@
-#include <stdio.h>
+#include "users.h"
 
 int main() {
-    int x;
-
-    printf("Hello, World!\n");
-    x++;
-    printf("%d",x);
     return 0;
 }

@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files (x86)\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\CLion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files (x86)\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "E:\CLion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Work\Adatszerkezet I\Projekt1"
+CMAKE_SOURCE_DIR = "E:\Fejlett programozasi nyelvek\Algoritmusok es adatszerkezetek\Projekt1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Work\Adatszerkezet I\Projekt1\cmake-build-debug"
+CMAKE_BINARY_DIR = "E:\Fejlett programozasi nyelvek\Algoritmusok es adatszerkezetek\Projekt1\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = "D:\Work\Adatszerkezet I\Projekt1\cmake-build-debug"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files (x86)\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"E:\CLion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -89,7 +89,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files (x86)\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"E:\CLion\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Work\Adatszerkezet I\Projekt1\cmake-build-debug\CMakeFiles" "D:\Work\Adatszerkezet I\Projekt1\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Fejlett programozasi nyelvek\Algoritmusok es adatszerkezetek\Projekt1\cmake-build-debug\CMakeFiles" "E:\Fejlett programozasi nyelvek\Algoritmusok es adatszerkezetek\Projekt1\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Work\Adatszerkezet I\Projekt1\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Fejlett programozasi nyelvek\Algoritmusok es adatszerkezetek\Projekt1\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/main.c.s
 .PHONY : main.c.s
 
+users.obj: users.c.obj
+
+.PHONY : users.obj
+
+# target to build an object file
+users.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/users.c.obj
+.PHONY : users.c.obj
+
+users.i: users.c.i
+
+.PHONY : users.i
+
+# target to preprocess a source file
+users.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/users.c.i
+.PHONY : users.c.i
+
+users.s: users.c.s
+
+.PHONY : users.s
+
+# target to generate assembly for a file
+users.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/users.c.s
+.PHONY : users.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... users.obj
+	@echo ... users.i
+	@echo ... users.s
 .PHONY : help
 
 
