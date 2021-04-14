@@ -14,6 +14,7 @@ typedef struct User{
 }User;
 
 void createUser(struct User** pUser);
-void addUser(struct User** pUser,int id, char name[20]);
+void addUser(struct User** pUser,int* id);
+void printUsers(struct User* pUser);
 
 #endif //PROJEKT1_USERS_H

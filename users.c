@@ -10,10 +10,21 @@ void createUser(struct User** pUser){
         printf("Hiba a helyfoglalasnal");
     }
 }
-void addUser(struct User** pUser,int id, char name[20]){
+void addUser(struct User** pUser,int* id){
     User *newUser;
     createUser(&newUser);
-    newUser->id=id;
+    newUser->id=*id;
+    newUser->next=*pUser;
+    printf("Uj felhasznalo neve:");
     gets(newUser->name);
     *pUser=newUser;
+    *id=*id+1;
+}
+void printUsers(struct User* pUser){
+    User* seged=pUser;
+    printf("Felhasznalok:\n");
+    while(seged!=NULL){
+        printf(" %s\n", seged->name);
+        seged = seged->next;
+    }
 }

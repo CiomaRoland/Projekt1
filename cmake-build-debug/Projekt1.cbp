@@ -76,6 +76,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cards.c">
+			<Option target="Projekt1"/>
+		</Unit>
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cards.h">
+			<Option target="Projekt1"/>
+		</Unit>
 		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/main.c">
 			<Option target="Projekt1"/>
 		</Unit>

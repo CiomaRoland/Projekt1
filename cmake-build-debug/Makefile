@@ -142,6 +142,33 @@ Projekt1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/build
 .PHONY : Projekt1/fast
 
+cards.obj: cards.c.obj
+
+.PHONY : cards.obj
+
+# target to build an object file
+cards.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/cards.c.obj
+.PHONY : cards.c.obj
+
+cards.i: cards.c.i
+
+.PHONY : cards.i
+
+# target to preprocess a source file
+cards.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/cards.c.i
+.PHONY : cards.c.i
+
+cards.s: cards.c.s
+
+.PHONY : cards.s
+
+# target to generate assembly for a file
+cards.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/cards.c.s
+.PHONY : cards.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -205,6 +232,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Projekt1
+	@echo ... cards.obj
+	@echo ... cards.i
+	@echo ... cards.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
