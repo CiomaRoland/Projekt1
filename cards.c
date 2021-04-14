@@ -31,5 +31,29 @@ void printCards(struct Card* pCard){
     }
 }
 void setCardStatus(struct Card** pCard){
+    char tmp_title[20];
+    char tmp_status[6];
+
+    printf("Melyik kartyat szeretned modositani: \n");
+    gets(tmp_title);
+
+    Card* seged=pCard;
+    Card* megvanCard = NULL;
+    while (seged != NULL) {
+        if (strcmp(seged->title,tmp_title) == 0) {
+            //elmenteni a cimet
+            megvanCard = seged;
+            break;
+        }
+        seged = seged->next;
+    }
+
+    if (megvanCard == NULL) {
+        printf("Nincs ilyen nevu kartya!\n");
+    } else {
+        printf("Kerem az uj statuszt: \n");
+        gets(tmp_status);
+        sprintf(megvanCard->status,tmp_status);
+    }
 
 }

@@ -6,15 +6,20 @@ int main() {
     User* users=NULL;
     int id=0;
     for (int i=0; i<3; ++i) {
-        addUser(&users, &id);
+        //addUser(&users, &id);
     }
-    printUsers(users);
+    //printUsers(users);
 
-    //boards
+    //cards
     Card * cards=NULL;
     for (int i=0; i<3; ++i) {
         addCard(&cards);
     }
     printCards(cards);
+
+    setCardStatus(&cards);
+
+    printCards(cards);
+
     return 0;
 }

@@ -6,6 +6,7 @@
 #define PROJEKT1_CARDS_H
 #include <malloc.h>
 #include <stdio.h>
+#include <string.h>
 
 typedef struct Card{
     char title[20];
