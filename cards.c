@@ -35,7 +35,7 @@ void setCardStatus(struct Card** pCard){
     char tmp_status[6];
 
     printf("Melyik kartyat szeretned modositani:");
-    scanf("%s", tmp_title);
+    gets(tmp_title);
 
     Card* seged=*pCard;
     Card* megvanCard = NULL;
@@ -54,6 +54,30 @@ void setCardStatus(struct Card** pCard){
         printf("Kerem az uj statuszt:");
         gets(tmp_status);
         sprintf(megvanCard->status,tmp_status);
+    }
+
+}
+void getCardStatus(struct Card** pCard){
+    char tmp_title[20];
+
+    printf("Melyik kartya statuszat szeretned?:");
+    gets(tmp_title);
+
+    Card* seged=*pCard;
+    Card* megvanCard = NULL;
+    while (seged != NULL) {
+        if (strcmp(seged->title,tmp_title) == 0) {
+            //elmenteni a cimet
+            megvanCard = seged;
+            break;
+        }
+        seged = seged->next;
+    }
+
+    if (megvanCard == NULL) {
+        printf("Nincs ilyen nevu kartya!\n");
+    } else {
+        printf("A kartya statusza: %s\n", megvanCard->status);
     }
 
 }

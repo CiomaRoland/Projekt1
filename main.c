@@ -20,6 +20,7 @@ int main() {
     setCardStatus(&cards);
 
     printCards(cards);
+    getCardStatus(&cards);
 
     return 0;
 }
