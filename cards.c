@@ -26,7 +26,7 @@ void printCards(struct Card* pCard){
     Card* seged=pCard;
     printf("Kartyak:\n");
     while(seged!=NULL){
-        printf(" %s %s\n", seged->title, seged->status);
+        printf(" %s %s %s\n", seged->title, seged->status, seged->description);
         seged = seged->next;
     }
 }
@@ -78,6 +78,82 @@ void getCardStatus(struct Card** pCard){
         printf("Nincs ilyen nevu kartya!\n");
     } else {
         printf("A kartya statusza: %s\n", megvanCard->status);
+    }
+
+}
+
+void setCardTitle(struct Card** pCard){
+    char tmp_title[20];
+    char tmp_title2[20];
+
+    printf("Melyik kartyat szeretned modositani:");
+    gets(tmp_title);
+
+    Card* seged=*pCard;
+    Card* megvanCard = NULL;
+    while (seged != NULL) {
+        if (strcmp(seged->title,tmp_title) == 0) {
+            //elmenteni a cimet
+            megvanCard = seged;
+            break;
+        }
+        seged = seged->next;
+    }
+
+    if (megvanCard == NULL) {
+        printf("Nincs ilyen nevu kartya!\n");
+    } else {
+        printf("Kerem az uj cimet:");
+        gets(tmp_title2);
+        sprintf(megvanCard->title,tmp_title2);
+    }
+
+}
+
+void setCardDescription(struct Card** pCard){
+    char tmp_title[20];
+    char tmp_descr[100];
+
+    printf("Melyik kartyat szeretned modositani:");
+    gets(tmp_title);
+
+    Card* seged=*pCard;
+    Card* megvanCard = NULL;
+    while (seged != NULL) {
+        if (strcmp(seged->title,tmp_title) == 0) {
+            //elmenteni a cimet
+            megvanCard = seged;
+            break;
+        }
+        seged = seged->next;
+    }
+
+    if (megvanCard == NULL) {
+        printf("Nincs ilyen nevu kartya!\n");
+    } else {
+        printf("Kerem az uj leirast:");
+        gets(tmp_descr);
+        sprintf(megvanCard->description,tmp_descr);
+    }
+
+}
+
+void getCardsByStatus(struct Card* pCard){
+    Card* seged=pCard;
+    char tmp_status[6];
+
+    printf("Milyen tipusu kartyakat szeretnel latni?\n");
+    gets(tmp_status);
+
+    if (strcmp(tmp_status,"TO DO") == 0 || strcmp(tmp_status,"DOING") == 0 || strcmp(tmp_status,"DONE") == 0){
+        while(seged!=NULL){
+            if (strcmp(tmp_status,seged->status) == 0) {
+                printf(" %s\n", seged->title);
+            }
+            seged = seged->next;
+        }
+    } else {
+        printf("Elgepelt statusz");
     }
 
 }

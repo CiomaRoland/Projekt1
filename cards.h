@@ -21,5 +21,8 @@ void addCard(struct Card** pCard);
 void printCards(struct Card* pCard);
 void setCardStatus(struct Card** pCard);
 void getCardStatus(struct Card** pCard);
+void setCardTitle(struct Card** pCard);
+void setCardDescription(struct Card** pCard);
+void getCardsByStatus(struct Card* pCard);
 
 #endif //PROJEKT1_CARDS_H

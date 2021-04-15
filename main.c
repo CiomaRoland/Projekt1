@@ -19,8 +19,16 @@ int main() {
 
     setCardStatus(&cards);
 
+  //  printCards(cards);
+  //  getCardStatus(&cards);
+
+   // setCardTitle(&cards);
+    //setCardDescription(&cards);
     printCards(cards);
-    getCardStatus(&cards);
+
+    getCardsByStatus(cards);
+
+
 
     return 0;
 }
