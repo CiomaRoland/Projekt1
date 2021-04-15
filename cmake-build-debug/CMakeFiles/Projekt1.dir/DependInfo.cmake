@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Work/Adatszerkezet I/Projekt1/cards.c" "D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/cards.c.obj"
-  "D:/Work/Adatszerkezet I/Projekt1/main.c" "D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/main.c.obj"
-  "D:/Work/Adatszerkezet I/Projekt1/users.c" "D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/users.c.obj"
+  "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/boards.c" "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/boards.c.obj"
+  "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cards.c" "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/cards.c.obj"
+  "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/main.c" "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/main.c.obj"
+  "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/users.c" "E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/CMakeFiles/Projekt1.dir/users.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

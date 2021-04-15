@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Projekt1.dir/boards.c.obj"
   "CMakeFiles/Projekt1.dir/cards.c.obj"
   "CMakeFiles/Projekt1.dir/main.c.obj"
   "CMakeFiles/Projekt1.dir/users.c.obj"

@@ -8,88 +8,96 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug"/>
+				<Option working_dir="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug"/>
+				<Option working_dir="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projekt1">
-				<Option output="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Projekt1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug"/>
+				<Option output="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Projekt1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt1"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt1"/>
+					<CompileFile command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Projekt1/fast">
-				<Option output="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Projekt1.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug"/>
+				<Option output="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Projekt1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="e:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt1/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt1/fast"/>
+					<CompileFile command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug"/>
+				<Option working_dir="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Work/Adatszerkezet I/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/mingw/bin/mingw32-make.exe -f &quot;E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/cards.c">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/boards.c">
 			<Option target="Projekt1"/>
 		</Unit>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/cards.h">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/boards.h">
 			<Option target="Projekt1"/>
 		</Unit>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/main.c">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cards.c">
 			<Option target="Projekt1"/>
 		</Unit>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/users.c">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/cards.h">
 			<Option target="Projekt1"/>
 		</Unit>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/users.h">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/main.c">
 			<Option target="Projekt1"/>
 		</Unit>
-		<Unit filename="D:/Work/Adatszerkezet I/Projekt1/CMakeLists.txt">
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/users.c">
+			<Option target="Projekt1"/>
+		</Unit>
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/users.h">
+			<Option target="Projekt1"/>
+		</Unit>
+		<Unit filename="E:/Fejlett programozasi nyelvek/Algoritmusok es adatszerkezetek/Projekt1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
