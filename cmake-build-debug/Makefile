@@ -142,6 +142,33 @@ Projekt1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/build
 .PHONY : Projekt1/fast
 
+UserListBoard.obj: UserListBoard.c.obj
+
+.PHONY : UserListBoard.obj
+
+# target to build an object file
+UserListBoard.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/UserListBoard.c.obj
+.PHONY : UserListBoard.c.obj
+
+UserListBoard.i: UserListBoard.c.i
+
+.PHONY : UserListBoard.i
+
+# target to preprocess a source file
+UserListBoard.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/UserListBoard.c.i
+.PHONY : UserListBoard.c.i
+
+UserListBoard.s: UserListBoard.c.s
+
+.PHONY : UserListBoard.s
+
+# target to generate assembly for a file
+UserListBoard.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Projekt1.dir\build.make CMakeFiles/Projekt1.dir/UserListBoard.c.s
+.PHONY : UserListBoard.c.s
+
 boards.obj: boards.c.obj
 
 .PHONY : boards.obj
@@ -259,6 +286,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Projekt1
+	@echo ... UserListBoard.obj
+	@echo ... UserListBoard.i
+	@echo ... UserListBoard.s
 	@echo ... boards.obj
 	@echo ... boards.i
 	@echo ... boards.s

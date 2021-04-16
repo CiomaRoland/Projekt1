@@ -6,18 +6,21 @@
 #define PROJEKT1_BOARDS_H
 #include<stdio.h>
 #include<malloc.h>
-#include"users.h"
 #include<string.h>
+#include "UserListBoard.h"
+#include "users.h"
 
 typedef struct Board{
     char name[20];
-    struct User* users;
+    int id[50];
     struct Board *next;
 }Board;
 
 void createBoard(struct Board** pBoard);
 void addBoard(struct Board** pBoard);
 void printBoards(struct Board* pBoard);
-void addUserToBoard(struct Board** pBoard,struct User** pUser);
+void addUserToBoard(UserListBoard**,struct Board* pBoard, struct User* pUser);
+void printBoardUsers(UserListBoard*);
+
 
 #endif //PROJEKT1_BOARDS_H

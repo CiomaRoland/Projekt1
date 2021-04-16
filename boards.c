@@ -4,6 +4,7 @@
 
 #include "boards.h"
 
+
 void createBoard(struct Board** pBoard){
     (*pBoard)=(Board*)malloc(1*sizeof(Board));
     if ((*pBoard)==NULL){
@@ -15,7 +16,6 @@ void addBoard(struct Board** pBoard){
     createBoard(&newBoard);
     printf("Uj tabla neve:");
     gets(newBoard->name);
-    newBoard->users=NULL;
     newBoard->next=*pBoard;
     *pBoard=newBoard;
 }
@@ -27,14 +27,14 @@ void printBoards(struct Board* pBoard){
         seged = seged->next;
     }
 }
-void addUserToBoard(struct Board** pBoard,struct User** pUser){
+void addUserToBoard(UserListBoard** pUserListBoard,struct Board* pBoard, struct User* pUser){
     char tmp_user[20];
-    char tmp_board[20];
+    char tmp_board[100];
 
-    printf("Melyik felhasznalot szeretned hozzaadni egy tablahoz?");
+    printf("Melyik felhasznalot szeretned hozzaadni?");
     gets(tmp_user);
 
-    User* seged=*pUser;
+    User* seged=pUser;
     User* megvanUser = NULL;
     while (seged != NULL) {
         if (strcmp(seged->name,tmp_user) == 0) {
@@ -46,25 +46,32 @@ void addUserToBoard(struct Board** pBoard,struct User** pUser){
     }
 
     if (megvanUser == NULL) {
-        printf("Nincs ilyen nevu felhaszalo!\n");
+        printf("Nincs ilyen nevu felhasznalo!\n");
     } else {
-        Board* seged=*pBoard;
-        Board* megvanBoard = NULL;
-
-        printf("Melyik tablahoz szeretned hozzaadni a felhasznalot?");
+        printf("Melyik tablahoz szeretned hozzaadni?");
         gets(tmp_board);
-        while (seged != NULL) {
-            if (strcmp(seged->name,tmp_board) == 0) {
+        Board *seged2 = pBoard;
+        Board *megvanBoard = NULL;
+        while (seged2 != NULL) {
+            if (strcmp(seged2->name, tmp_board) == 0) {
                 //elmenteni a cimet
-                megvanBoard = seged;
+                megvanBoard = seged2;
                 break;
             }
-            seged = seged->next;
+            seged2 = seged2->next;
         }
         if (megvanBoard == NULL) {
             printf("Nincs ilyen nevu tabla!\n");
-        }else{
-            megvanBoard->users=megvanUser;
+        } else {
+            addUserBoard(pUserListBoard,megvanBoard->name,megvanUser->name);
         }
+    }
+}
+void printBoardUsers(UserListBoard* userListBoard){
+    UserListBoard* seged=userListBoard;
+    printf("Tablak es felhasznalok:\n");
+    while(seged!=NULL){
+        printf(" %s-%s\n", seged->name_board,seged->name_user);
+        seged = seged->next;
     }
 }
