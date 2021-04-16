@@ -20,6 +20,7 @@ void addCard(struct Card** pCard){
     sprintf(newCard->status,"TO DO");
     newCard->user_id=-1;
     newCard->next=*pCard;
+    newCard->hozzaVanAdvaEgyTablahoz=0;
     *pCard=newCard;
 }
 void printCards(struct Card* pCard){

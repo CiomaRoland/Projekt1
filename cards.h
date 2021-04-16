@@ -13,6 +13,7 @@ typedef struct Card{
     char description[100];
     char status[6];
     int user_id;
+    int hozzaVanAdvaEgyTablahoz;
     struct Card *next;
 }Card;
 

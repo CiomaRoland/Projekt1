@@ -11,14 +11,29 @@ void createUser(struct User** pUser){
     }
 }
 void addUser(struct User** pUser,int* id){
-    User *newUser;
-    createUser(&newUser);
-    newUser->id=*id;
-    newUser->next=*pUser;
+    char newName[20];
     printf("Uj felhasznalo neve:");
-    gets(newUser->name);
-    *pUser=newUser;
-    *id=*id+1;
+    gets(newName);
+    User* seged=*pUser;
+    int volt_e=0;
+    while (seged != NULL) {
+        if (strcmp(seged->name,newName) == 0) {
+            volt_e=1;
+            break;
+        }
+        seged = seged->next;
+    }
+    if (volt_e==0) {
+        User *newUser;
+        createUser(&newUser);
+        newUser->id = *id;
+        strcpy(newUser->name, newName);
+        newUser->next = *pUser;
+        *pUser = newUser;
+        *id = *id + 1;
+    }else{
+        printf("Ilyen nevu felhasznalo mar letezik!\n");
+    }
 }
 void printUsers(struct User* pUser){
     User* seged=pUser;

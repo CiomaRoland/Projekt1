@@ -50,7 +50,6 @@ void addUserToBoard(UserListBoard** pUserListBoard,struct Board* pBoard, struct 
     } else {
         printf("Melyik tablahoz szeretned hozzaadni?");
         gets(tmp_board);
-        //
         Board *seged2 = pBoard;
         Board *megvanBoard = NULL;
         while (seged2 != NULL) {
@@ -64,7 +63,19 @@ void addUserToBoard(UserListBoard** pUserListBoard,struct Board* pBoard, struct 
         if (megvanBoard == NULL) {
             printf("Nincs ilyen nevu tabla!\n");
         } else {
-            addUserBoard(pUserListBoard,megvanBoard->name,megvanUser->name);
+            int volt_e=0;
+            UserListBoard* seged3=*pUserListBoard;
+            while(seged3!=NULL){
+                if ((strcmp(seged3->name_user,seged->name)==0) && (strcmp(seged3->name_board,seged2->name))==0){
+                    volt_e=1;
+                }
+                seged3 = seged3->next;
+            }
+            if (volt_e==1){
+                printf("Ezt a felhasznalot mar hozzadtuk a tablahoz!\n");
+            }else {
+                addUserBoard(pUserListBoard, megvanBoard->name, megvanUser->name);
+            }
         }
     }
 }
@@ -98,22 +109,28 @@ void addCardToBoard(cardListBoard** pcardListBoard,struct Board* pBoard, struct 
     if (megvanCard == NULL) {
         printf("Nincs ilyen nevu kartya!\n");
     } else {
-        printf("Melyik tablahoz szeretned hozzaadni a kartyat?");
-        gets(tmp_board);
-        Board *seged2 = pBoard;
-        Board *megvanBoard = NULL;
-        while (seged2 != NULL) {
-            if (strcmp(seged2->name, tmp_board) == 0) {
-                //elmenteni a cimet
-                megvanBoard = seged2;
-                break;
+        if(megvanCard->hozzaVanAdvaEgyTablahoz==0) {
+            printf("Melyik tablahoz szeretned hozzaadni a kartyat?");
+            gets(tmp_board);
+            Board *seged2 = pBoard;
+            Board *megvanBoard = NULL;
+            while (seged2 != NULL) {
+                if (strcmp(seged2->name, tmp_board) == 0) {
+                    //elmenteni a cimet
+                    megvanBoard = seged2;
+                    break;
+                }
+                seged2 = seged2->next;
             }
-            seged2 = seged2->next;
+            if (megvanBoard == NULL) {
+                printf("Nincs ilyen nevu tabla!\n");
+            } else {
+                addcardBoard(pcardListBoard, megvanBoard->name, megvanCard->title);
+                megvanCard->hozzaVanAdvaEgyTablahoz=1;
+            }
         }
-        if (megvanBoard == NULL) {
-            printf("Nincs ilyen nevu tabla!\n");
-        } else {
-            addcardBoard(pcardListBoard,megvanBoard->name,megvanCard->title);
+        else{
+            printf("Ez a kartya mar hozza van adva egy masik tablahoz\n");
         }
     }
 }
@@ -125,3 +142,4 @@ void printBoardCards(cardListBoard* pcardListBoard){
         seged = seged->next;
     }
 }
+

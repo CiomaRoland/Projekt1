@@ -6,6 +6,7 @@
 #define PROJEKT1_USERS_H
 #include<stdio.h>
 #include<malloc.h>
+#include<string.h>
 
 typedef struct User{
     int id;
