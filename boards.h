@@ -9,6 +9,8 @@
 #include<string.h>
 #include "UserListBoard.h"
 #include "users.h"
+#include "cards.h"
+#include "CardListBoard.h"
 
 typedef struct Board{
     char name[20];
@@ -21,6 +23,8 @@ void addBoard(struct Board** pBoard);
 void printBoards(struct Board* pBoard);
 void addUserToBoard(UserListBoard**,struct Board* pBoard, struct User* pUser);
 void printBoardUsers(UserListBoard*);
+void addCardToBoard(cardListBoard**,struct Board* pBoard, struct Card* pCard);
+void printBoardCards(cardListBoard*);
 
 
 #endif //PROJEKT1_BOARDS_H

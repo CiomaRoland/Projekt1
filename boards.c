@@ -50,6 +50,7 @@ void addUserToBoard(UserListBoard** pUserListBoard,struct Board* pBoard, struct 
     } else {
         printf("Melyik tablahoz szeretned hozzaadni?");
         gets(tmp_board);
+        //
         Board *seged2 = pBoard;
         Board *megvanBoard = NULL;
         while (seged2 != NULL) {
@@ -72,6 +73,55 @@ void printBoardUsers(UserListBoard* userListBoard){
     printf("Tablak es felhasznalok:\n");
     while(seged!=NULL){
         printf(" %s-%s\n", seged->name_board,seged->name_user);
+        seged = seged->next;
+    }
+}
+
+void addCardToBoard(cardListBoard** pcardListBoard,struct Board* pBoard, struct Card* pCard){
+    char tmp_card[20];
+    char tmp_board[100];
+
+    printf("Melyik kartyat szeretned hozzaadni a tablahoz?");
+    gets(tmp_card);
+
+    Card* seged=pCard;
+    Card* megvanCard = NULL;
+    while (seged != NULL) {
+        if (strcmp(seged->title,tmp_card) == 0) {
+            //elmenteni a cimet
+            megvanCard = seged;
+            break;
+        }
+        seged = seged->next;
+    }
+
+    if (megvanCard == NULL) {
+        printf("Nincs ilyen nevu kartya!\n");
+    } else {
+        printf("Melyik tablahoz szeretned hozzaadni a kartyat?");
+        gets(tmp_board);
+        Board *seged2 = pBoard;
+        Board *megvanBoard = NULL;
+        while (seged2 != NULL) {
+            if (strcmp(seged2->name, tmp_board) == 0) {
+                //elmenteni a cimet
+                megvanBoard = seged2;
+                break;
+            }
+            seged2 = seged2->next;
+        }
+        if (megvanBoard == NULL) {
+            printf("Nincs ilyen nevu tabla!\n");
+        } else {
+            addcardBoard(pcardListBoard,megvanBoard->name,megvanCard->title);
+        }
+    }
+}
+void printBoardCards(cardListBoard* pcardListBoard){
+    cardListBoard* seged=pcardListBoard;
+    printf("Tablak es kartyaik:\n");
+    while(seged!=NULL){
+        printf(" %s-%s\n", seged->name_board,seged->name_card);
         seged = seged->next;
     }
 }
